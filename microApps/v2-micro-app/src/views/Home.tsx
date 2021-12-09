@@ -1,4 +1,4 @@
-import { CreateElement, VNode } from 'vue/types';
+import { CreateElement, VNode } from 'vue';
 import { Vue, Component } from 'vue-property-decorator';
 import '@/assets/style/app.scss';
 import HelloWorld from '@/components/HelloWorld.vue';

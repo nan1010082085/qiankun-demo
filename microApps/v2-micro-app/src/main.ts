@@ -1,4 +1,4 @@
-import { CreateElement, VNode } from 'vue/types';
+import { CreateElement, VNode } from 'vue';
 import { Component } from 'vue-property-decorator';
 import Vue from 'vue';
 import App from './App';
