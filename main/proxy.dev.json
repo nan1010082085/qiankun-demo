@@ -1,0 +1,7 @@
+{
+  "container": "http://localhost:7801/",
+  "microApps": {
+    "v2-micro-app": "http://localhost:7802/",
+    "v3-micro-app": "http://localhost:7803/"
+  }
+}

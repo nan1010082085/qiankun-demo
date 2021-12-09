@@ -1,0 +1,13 @@
+{
+  "routesMicroApps": [
+    {
+      "name": "v2-micro-app",
+      "pathname": "/home"
+    },
+    {
+      "name": "v3-micro-app",
+      "pathname": "/home"
+    }
+  ],
+  "customMicroApps": []
+}
