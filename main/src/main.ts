@@ -12,24 +12,28 @@ const prod = process.env.NODE_ENV === 'production';
 // 微应用
 const { routesMicroApps = [], customMicroApps = [] } = microApps;
 // 开发
-const proxyJson = () => require('../proxy.dev.json');
+import proxyJson from '../proxy.dev.json';
+// const proxyJson = () => require('../proxy.dev.json');
 
-const app = QKRegisterApp({
-  routes: routesMicroApps,
-  config: {
-    mode: config.ROUTE_MODE,
-    env: prod ? 'prod' : 'dev',
-    devParam: proxyJson().microApps
-  },
-  action: {
-    beforeLoad: async (app: any) => {
-      console.log('before load [CONTAINER]', app.name);
+const app = QKRegisterApp(
+  {
+    routes: routesMicroApps,
+    config: {
+      mode: config.ROUTE_MODE,
+      env: prod ? 'prod' : 'dev',
+      devParam: proxyJson.microApps
     },
-    beforeMount: async (app: any) => {
-      console.log('before mount [CONTAINER]', app.name);
+    action: {
+      beforeLoad: async (app: any) => {
+        console.log('before load [CONTAINER]', app.name);
+      },
+      beforeMount: async (app: any) => {
+        console.log('before mount [CONTAINER]', app.name);
+      }
     }
-  }
-});
+  },
+  true
+);
 
 app.start();
 

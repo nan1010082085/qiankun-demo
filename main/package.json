@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "commit": "git add . & git-cz",
@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
-    "simple-qk": "^1.7.0",
+    "simple-qk": "^1.20.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",

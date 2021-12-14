@@ -7,14 +7,16 @@ import '@/assets/style/app.scss';
   components: { Container }
 })
 export default class App extends Vue {
-
   render(h: CreateElement): VNode {
     return (
       <div id='app'>
         <router-link to='/login'>login</router-link>
         <br />
-        <router-link to='/test/'>development test-app</router-link>
-        <router-link to='/v3/'>development v3-app</router-link>
+        <router-link to='/v2/'>v2-app</router-link>
+        <br />
+        <router-link to='/v3/'>v3-app</router-link>
+        <br />
+        路由加载
         <router-view />
       </div>
     );

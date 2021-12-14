@@ -9,5 +9,14 @@ module.exports = {
     // },
     // proxy: {}
   },
-  configureWebpack: {}
+  configureWebpack: {
+    // module: {
+    //   rules: [
+    //     {
+    //       test: /\.js|jsx|json$/,
+    //       use: 'babel-loader'
+    //     }
+    //   ]
+    // }
+  }
 };
