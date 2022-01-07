@@ -18,6 +18,9 @@ export default class App extends Vue {
         <br />
         路由加载
         <router-view />
+        {/* 手动加载 */}
+        <div>local app</div>
+        <div id='load-micro-app-container'></div>
       </div>
     );
   }

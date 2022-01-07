@@ -1,3 +1,4 @@
+import { loadMicroApp } from 'qiankun';
 import Vue from 'vue';
 import App from './App';
 import router from './router';
@@ -6,7 +7,7 @@ import microApps from '../public/micro-app.json';
 import config from './utils/config';
 import QK, { QKRegisterApp } from 'simple-qk';
 import 'lodash';
-const { initGlobalState, loadMicroApp } = QK;
+const { initGlobalState } = QK;
 
 const prod = process.env.NODE_ENV === 'production';
 // 微应用

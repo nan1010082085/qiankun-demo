@@ -1,6 +1,6 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/container/',
-  outputDir: '../dist/container',
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/main/',
+  outputDir: '../dist/main',
   devServer: {
     port: '7801',
     compress: false

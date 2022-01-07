@@ -5,6 +5,6 @@ import { Vue, Component } from 'vue-property-decorator';
 })
 export default class Container extends Vue {
   render(h: CreateElement): VNode {
-    return <div id='container-micro-app' />;
+    return <div id='micro-app-container' />;
   }
 }

@@ -13,6 +13,7 @@ export default class App extends Vue {
   render(h: CreateElement): VNode {
     return (
       <div id='app'>
+        package name is v2-micro-app
         <button on-click={() => this.routePath('home')}>home</button>
         <button on-click={() => this.routePath('about')}>about</button>
         <router-view />

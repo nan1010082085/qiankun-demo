@@ -9,5 +9,11 @@
       "pathname": "/home"
     }
   ],
-  "customMicroApps": []
+  "customMicroApps": [
+    {
+      "name": "local-micro-app",
+      "entry": "//localhost:7804",
+      "container": "#load-micro-app-container"
+    }
+  ]
 }

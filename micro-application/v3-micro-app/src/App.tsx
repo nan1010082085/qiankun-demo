@@ -12,6 +12,7 @@ export default defineComponent({
       return (
         <>
           <div id='app'>
+            package name is v3-micro-app
             <button onClick={() => routePath('home')}>home</button>
             <button onClick={() => routePath('about')}>about</button>
           </div>

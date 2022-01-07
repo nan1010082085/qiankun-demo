@@ -4,6 +4,7 @@ const env = process.env.NODE_ENV === 'development';
 
 module.exports = {
   publicPath: env ? '/' : `/${name}/`,
+  outputDir: `../../dist/${name}`,
   devServer: {
     headers: {
       'Access-Control-Allow-Origin': '*'
