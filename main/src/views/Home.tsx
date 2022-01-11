@@ -7,7 +7,7 @@ import { Vue, Component } from 'vue-property-decorator';
 export default class Home extends Vue {
   render(h: CreateElement): VNode {
     return <div>
-      home
+      main home
     </div>;
   }
 }

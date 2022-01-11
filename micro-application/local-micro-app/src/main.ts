@@ -7,9 +7,9 @@ import './app.scss';
 import { QKRegisterMicroApp } from 'simple-qk';
 
 import packageJson from '../package.json';
-// createApp(App).use(store).use(router).mount('#app');
+// createApp(App, {widgetData: [], widgetSize: {}}).mount('#app');
 
-const app = QKRegisterMicroApp(
+const app: any = QKRegisterMicroApp(
   {
     version: '3',
     option: {
@@ -29,7 +29,12 @@ const app = QKRegisterMicroApp(
 
 app.start();
 
-export const bootstrap = async () => app.bootstrap();
-export const mount = async (props: any) => app.mount(props);
+export const bootstrap = async () => {
+  return app.bootstrap()
+};
+export const mount = async (props: any) => {
+  console.log('micro', props);
+  return app.mount(props);
+};
 export const unmount = async () => app.unmount();
 export const update = async (props: any) => app.update(props);

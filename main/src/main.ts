@@ -41,7 +41,25 @@ app.start();
 // 手动加载微应用
 if (customMicroApps.length) {
   customMicroApps.forEach((microApps: any) => {
-    loadMicroApp(microApps);
+    microApps.props = {
+      props: {
+        widgetData: [],
+        widgetSize: {}
+      }
+    };
+    const localApp: any = loadMicroApp(microApps);
+    if (prod) {
+      microApps.entry = `/${microApps.name}/`;
+    }
+    // 请求静态加载文件
+    fetch(`${microApps.entry}/property.json`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        console.log(json);
+      });
+    console.log(localApp, {});
   });
 }
 
